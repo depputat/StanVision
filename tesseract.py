@@ -85,7 +85,7 @@ def main():
         root.destroy()
 
         if not image_path:
-            print("Файл не выбран.")
+            print("Файл не выбран")
             return
 
         print(f"Обработка: {image_path}")
