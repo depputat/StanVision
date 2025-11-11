@@ -1,4 +1,3 @@
-# main.py (updated: fullscreen + wheel zoom + pan clamping + speed control + logo only on main + editable gcode + file check + fix main window size on back + fixed G00/G01 parsing + fixed line drawing + removed gray lines)
 import sys
 import math
 import re
@@ -11,9 +10,7 @@ from PySide6.QtWidgets import (
 )
 from PySide6.QtCore import Qt, QTimer, QRectF, QPoint
 from PySide6.QtGui import QColor, QPalette, QPainter, QBrush, QPen, QFont, QImage, QPixmap
-# ---------------------------
-# OCR (easyocr) — опционально
-# ---------------------------
+
 try:
     import easyocr
     import ssl
